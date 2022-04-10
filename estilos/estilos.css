@@ -222,7 +222,18 @@ background-color: #009189;
    
 
 }
+.contenedor-cartas .card-grid .img-grid:hover{
+    transform: scale(1.1,1.1);
+    
 
+
+}
+.contenedor-cartas .card-grid .descripcion-grid:hover{
+    transform: scale(1.1,1);
+    font-size: 17px;
+
+
+}
 .descripcion-grid h1 {
     font-size: 38px;
         font-style:oblique ;
