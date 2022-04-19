@@ -11,9 +11,7 @@
 
 }
 
-.sinpadding {
-    padding: 0px;
-}
+
 
 .navegacion {
     position: relative;
@@ -159,6 +157,7 @@
 .PiePagina {
     width: 100%;
     background-color: #009189;
+    margin-top: 50px;
 
 }
 
@@ -210,7 +209,7 @@
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .PiePagina .grupo-1 {
         width: 80%;
 
@@ -232,12 +231,10 @@
 
 .card {
     align-items: start;
-    justify-content: center;
-    margin: 5px;    
-    height: 770px;
-    display: flex;
-    margin: 5px;
+    justify-content: center;   
     height: 720px;
+    display: flex;
+    margin-top: 20px ;
 
 
 }
@@ -252,28 +249,24 @@
     border-radius: 5px;
     color: white;
     text-align: center;
-    height: 500px;
+    height: 650px;
     transition: all 2s;
     cursor: pointer;
     font-size: 19px;
+    
 }
 
-
-.card-img-top{
-    height: 280px;
+.cardgrid{
+    height: 380px;
+    width: 100%;
 }
+
 .contenedor-cartas .card-grid img{
 
     object-fit: cover;
     width: 100%;
     
     
-}
-.contenedor-cartas .card-grid img {
-
-    object-fit: cover;
-    width: 100%;
-
 }
 
 .contenedor-cartas .card-grid .card {
@@ -298,7 +291,7 @@
 
 .card .card-grid:hover {
     transform: scale(1.1, 1);
-    font-size: 17px;
+    
 
 
 }
@@ -355,20 +348,20 @@
 }
 
 @media (max-width: 480px) {
-    .contenedor-card .carta {
-        flex-direction: column;
-    }
-
-    .carta .bloque-img {
+   
+    .card .card-grid {
         width: 100%;
+        
     }
 
     .card .card-body {
         height: 300px;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         
     }
+    
 }
 
 .Contenedor3 {
