@@ -213,10 +213,7 @@
 @media screen and (max-width: 800px) {
     .PiePagina .grupo-1 {
         width: 80%;
-<<<<<<< HEAD
-=======
 
->>>>>>> ultimaversion
         padding: 35px 0px;
     }
 
@@ -229,11 +226,6 @@
         margin-right: 1.5rem;
     }
 
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> ultimaversion
 
 }
 
@@ -241,36 +233,32 @@
 .card {
     align-items: start;
     justify-content: center;
-<<<<<<< HEAD
     margin: 5px;    
     height: 770px;
     display: flex;
-    
-=======
     margin: 5px;
     height: 720px;
 
->>>>>>> ultimaversion
+
 }
 
 .card .card-body {
     background-color: rgb(0, 0, 0);
-<<<<<<< HEAD
+
 	border-radius: 5px;
 	color: white;
 	text-align: center;
-=======
+
     border-radius: 5px;
     color: white;
     text-align: center;
->>>>>>> ultimaversion
     height: 500px;
     transition: all 2s;
     cursor: pointer;
     font-size: 19px;
 }
 
-<<<<<<< HEAD
+
 .card-img-top{
     height: 280px;
 }
@@ -280,14 +268,12 @@
     width: 100%;
     
     
-=======
-
+}
 .contenedor-cartas .card-grid img {
 
     object-fit: cover;
     width: 100%;
 
->>>>>>> ultimaversion
 }
 
 .contenedor-cartas .card-grid .card {
@@ -296,11 +282,9 @@
 
 }
 
-<<<<<<< HEAD
-.card-body{
-=======
+
 .card-body {
->>>>>>> ultimaversion
+
     font-size: 18px;
     background-color: black;
 }
