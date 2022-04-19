@@ -154,9 +154,6 @@ background-color: #009189;
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px; */
     padding: 45px 0px;
     display: flex;
     align-content: stretch;
@@ -204,8 +201,6 @@ background-color: #009189;
 @media screen and (max-width: 800px)  {
     .PiePagina .grupo-1{
         width: 80%;
-        /* grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px; */
         padding: 35px 0px;
     }
     .navegacion .listamenu{
@@ -215,11 +210,7 @@ background-color: #009189;
     .listamenu .li{
         margin-right: 1.5rem;
     }
-    .descripcion-grid .descripcion-producto{
-        /* height: 800px;
-        
-         */
-    }
+
     
 
 }
@@ -227,12 +218,10 @@ background-color: #009189;
 
 .card{
     align-items: start;
-    /* display: grid; */
-    /* grid-gap: 10px; */
-    /* grid-template-columns: repeat(auto-fit, 300px); */
     justify-content: center;
     margin: 5px;    
-    height: 720px;
+    height: 770px;
+    display: flex;
     
 }
 
@@ -241,18 +230,20 @@ background-color: #009189;
 	border-radius: 5px;
 	color: white;
 	text-align: center;
-    /* padding: 10px 10px; */
     height: 500px;
     transition: all 2s;
     cursor: pointer;
     font-size: 19px;    
 }
 
-
+.card-img-top{
+    height: 280px;
+}
 .contenedor-cartas .card-grid img{
 
     object-fit: cover;
     width: 100%;
+    
     
 }
 .contenedor-cartas .card-grid .card {
@@ -260,12 +251,7 @@ background-color: #009189;
    margin: 0px;
 
 }
-/* 
-.contenedor-cartas .card-grid .descripcion-grid {
-    padding: 10px;
-   
 
-} */
 .card-body{
     font-size: 18px;
     background-color: black;
@@ -289,7 +275,7 @@ background-color: #009189;
 }
 
 
-/* empresa */
+/* /////////////////////EMPRESA//////////////////////// */
 
 .carta{
     margin: 10px;
