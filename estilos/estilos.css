@@ -93,7 +93,7 @@
 }
 
 
-@media (max-width:649px) {
+@media (max-width:639px) {
     .boton-check {
         display: block;
 
@@ -227,15 +227,31 @@
 
 
 }
+@media screen and (max-width 800px){
+    .card{
+        display: flex;
+       padding: 50px;
+       margin-bottom: 10px;
+       
+       
+    }
+    .card .card-body {
+
+        text-align: center;
+        transition: all 2s;
+        cursor: pointer;
+        font-size: 19px;
+        
+    }
+}
 
 
 .card {
     align-items: start;
-    justify-content: center;   
-    height: 720px;
     display: flex;
-    margin-top: 20px ;
+    margin-top: 20px;
 
+    
 
 }
 
@@ -261,7 +277,7 @@
     width: 100%;
 }
 
-.contenedor-cartas .card-grid img{
+.card-grid img{
 
     object-fit: cover;
     width: 100%;
@@ -269,7 +285,7 @@
     
 }
 
-.contenedor-cartas .card-grid .card {
+.card-grid .card {
     padding: 0px;
     margin: 0px;
 
@@ -280,6 +296,8 @@
 
     font-size: 18px;
     background-color: black;
+    height: 750px;
+    width: 100%;
 }
 
 .card .card-grid .img-grid:hover {
