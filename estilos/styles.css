@@ -2,22 +2,30 @@
   margin: 0;
   padding: 0; }
 
+.cuerpo {
+  background-color: #F2E63D; }
+
+.contenido {
+  max-width: 100%;
+  margin: auto;
+  padding: 0px 30px; }
+
+.listamenu {
+  display: inline-flex;
+  list-style: none; }
+
 .navegacion {
   position: relative;
   z-index: 5;
   width: 100%;
   padding: 10px 0;
-  background: #1b1b1b; }
+  background: #0D0D0D; }
 
-.navegacion .contenido {
+.contenido {
   display: flex;
   align-items: center;
   justify-content: center;
   text-shadow: 1px 1px 2px green; }
-
-.navegacion .listamenu {
-  display: inline-flex;
-  list-style: none; }
 
 .navegacion .logo a {
   color: goldenrod;
@@ -35,9 +43,8 @@
   text-decoration: none;
   transition: all 0.3s ease;
   font-family: 'Teko', sans-serif; }
-
-.listamenu li a:hover {
-  color: goldenrod; }
+  .listamenu li a:hover {
+    color: goldenrod; }
 
 .icono {
   color: #fff;
@@ -77,27 +84,25 @@
     height: 100vh;
     width: 100%;
     max-width: 400px;
-    background: #222;
+    background: #0D0D0D;
     display: flex;
     padding: 40px 0;
     text-align: center; }
-  .navegacion .listamenu li {
-    margin-top: 45px; }
-  .navegacion .listamenu li a {
-    font-size: 23px; }
+    .navegacion .listamenu li {
+      margin-top: 45px; }
+    .navegacion .listamenu a {
+      font-size: 23px; }
   #check:checked ~ ul {
     left: 0; }
   .logo {
     margin: 0px 20px; }
   .PiePagina .grupo-1 {
     display: flex;
-    flex-direction: column; }
-  .cuerpo {
-    background-color: #ff4800; } }
+    flex-direction: column; } }
 
 .PiePagina {
   width: 100%;
-  background-color: #009189;
+  background-color: #594814;
   margin-top: 50px; }
 
 .PiePagina .grupo-1 {
@@ -147,16 +152,19 @@
   .listamenu .li {
     margin-right: 1.5rem; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 576px) {
   .card {
     display: flex;
-    padding: 50px;
     margin-bottom: 10px; }
   .card .card-body {
     text-align: center;
     transition: all 2s;
-    cursor: pointer;
-    font-size: 19px; } }
+    cursor: pointer; }
+  p {
+    font-size: 20px; }
+  .box .piePaginap {
+    font: bolder;
+    font-size: 20px; } }
 
 .card {
   align-items: start;
@@ -168,13 +176,11 @@
   border-radius: 5px;
   color: white;
   text-align: center;
-  border-radius: 5px;
-  color: white;
-  text-align: center;
   height: 650px;
   transition: all 2s;
   cursor: pointer;
-  font-size: 19px; }
+  font-size: 26px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 .cardgrid {
   height: 380px;
@@ -203,3 +209,301 @@
 .card-grid h1 {
   font-size: 38px;
   font-style: oblique; }
+
+/* /////////////////////EMPRESA//////////////////////// */
+.carta {
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: black;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+.carta .bloque-img {
+  width: 900px; }
+
+.carta .bloque-img img {
+  max-width: 100%;
+  transition: all 2s;
+  cursor: pointer; }
+
+.carta .bloque-contenido {
+  padding-left: 20px; }
+
+.carta .bloque-contenido h2 {
+  margin: 0;
+  padding-left: 0;
+  color: #ff4800; }
+
+.carta .bloque-contenido p {
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: center;
+  font-size: 25px; }
+
+@media (max-width: 480px) {
+  .card .card-grid {
+    width: 100%; }
+  .card .card-body {
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 17px; }
+  .h3 {
+    font-size: 22px; } }
+
+.Contenedor3 {
+  position: relative;
+  margin-top: 20px;
+  background-color: #a9d7ec;
+  width: 100%;
+  float: left; }
+
+.Contenedor3 p {
+  margin-top: 30px;
+  width: 900px;
+  padding: 20px 40px 20px 40px;
+  color: black;
+  font-size: 25px;
+  line-height: 35px;
+  word-spacing: 5px;
+  display: inline-block; }
+
+.Contenedor3 {
+  background-color: aqua;
+  height: 12.5rem; }
+
+.Contenedor3 img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  float: right; }
+
+.cartaproducto {
+  animation-name: colordefondo;
+  animation-duration: 15s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes colordefondo {
+  0% {
+    background-color: #0D0D0D; }
+  25% {
+    background-color: #A68524; }
+  50% {
+    background-color: #F2C335; }
+  75% {
+    background-color: #A68524; }
+  100% {
+    background-color: #0D0D0D; } }
+
+/* /////////////////////CONTACTO//////////////////////// */
+.Contenidotitulo {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-size: 30px; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 100%; }
+  25% {
+    opacity: 75%; }
+  50% {
+    opacity: 50%; }
+  75% {
+    opacity: 25%; }
+  100% {
+    opacity: 0%; } }
+
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+form {
+  background-image: url(../multimedia/6.jpg);
+  width: 640px;
+  margin: 50px auto;
+  border-radius: 4px;
+  padding: 55px 30px; }
+
+form .titulo h2 {
+  letter-spacing: 6px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  color: #fff; }
+
+form .dosColumnas {
+  display: flex;
+  justify-content: space-between; }
+
+form .dosColumnas .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+  color: #fff; }
+
+form label {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+  color: #fff; }
+
+form .dosColumnas .item input {
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px; }
+
+form .unaColumna {
+  margin-bottom: 24px; }
+
+form .unaColumna textarea {
+  color: #fff;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  width: 100%;
+  height: 200px;
+  font-size: 17px; }
+
+form .action {
+  margin-bottom: 32px; }
+
+form .action input {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px; }
+
+form .action input[type="submit"] {
+  background: white;
+  color: black; }
+
+@media (max-width: 480px) {
+  form .dosColumnas {
+    flex-direction: column; }
+  form .dosColumnas .item {
+    width: 100%; }
+  form .action {
+    display: flex;
+    flex-direction: column; }
+  form .action input {
+    margin-bottom: 10px;
+    width: 100%; } }
+
+h1 {
+  color: #000000;
+  font-family: 'Megrim', cursive;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  background-color: #A68524; }
+
+/* /////////////////////PRODUCTOS//////////////////////// */
+.Productos {
+  color: #000000;
+  font-family: 'Megrim', cursive;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  background-image: url(../multimedia/PRODUCTOS-PARA-NUESTRA-EMPRESA-EN-150-DPI-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15rem 30rem 15rem 30rem;
+  text-transform: uppercase; }
+
+.cartaproducto {
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: black;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+
+.bloquephoto {
+  width: 100%; }
+
+.cartaprincipal .producto {
+  background-image: linear-gradient(to right, rgba(150, 148, 148, 0.74), #ff4800);
+  margin: 10px 30px; }
+
+.bloquephoto img {
+  max-width: 100%;
+  position: relative; }
+
+.bloque_producto {
+  padding: 20px;
+  margin-bottom: 10px; }
+
+.bloque_producto h2 {
+  margin-top: 8px;
+  padding-left: 0;
+  color: #F2E63D;
+  text-align: center; }
+
+.bloque_producto p {
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: center;
+  color: white;
+  font-size: 30px; }
+
+@media (max-width: 649px) and (min-width: 576px) {
+  .centrar {
+    height: 100%;
+    width: 100%; }
+  .card .card-body {
+    font-size: 17px; } }
+
+/* /////////////////////SERVICIOS//////////////////////// */
+.boton-instagram {
+  padding: 10px;
+  background-color: #d148d1;
+  color: white;
+  margin: 10px; }
+
+.boton-facebook {
+  padding: 10px;
+  background-color: #3434c4;
+  color: white;
+  margin: 10px; }
+
+.boton-twitter {
+  padding: 10px;
+  background-color: #3dbabe;
+  color: white;
+  margin: 10px; }
+
+.sociales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; }
