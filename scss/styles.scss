@@ -16,6 +16,13 @@
 
     
 }
+.subtitulo3{
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    font-size: 25px;
+    justify-content: center;
+}
 
 .listamenu {
     display: inline-flex;
@@ -254,75 +261,6 @@
 }
 
 
-.card {
-    align-items: start;
-    display: flex;
-    margin-top: 20px;
-
-    
-
-}
-
-.card .card-body {
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-    color: white;
-    text-align: center;
-    height: 650px;
-    transition: all 2s;
-    cursor: pointer;
-    font-size: $tamañoGrande;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-
-.cardgrid{
-    height: 380px;
-    width: 100%;
-}
-
-.card-grid img{
-
-    object-fit: cover;
-    width: 100%;
-    
-    
-}
-
-.card-grid .card {
-    padding: 0px;
-    margin: 0px;
-
-}
-
-
-.card-body {
-
-    font-size: 18px;
-    background-color: black;
-    height: 750px;
-    width: 100%;
-}
-
-.card .card-grid .img-grid:hover {
-    transform: scale(1.1, 1.1);
-
-
-
-}
-
-.card .card-grid:hover {
-    transform: scale(1.1, 1);
-    
-
-
-}
-
-.card-grid h1 {
-    font-size: 38px;
-    font-style: oblique;
-}
-
 
 /* /////////////////////EMPRESA//////////////////////// */
 
@@ -369,28 +307,6 @@
 
 }
 
-@media (max-width: 480px) {
-   
-    .card .card-grid {
-        width: 100%;
-  
-        
-    }
-
-    .card .card-body {
-        height: 300px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: $tamañoChico;
-        
-    
-        
-    }
-    .h3{
-        font-size: $tituloChico;
-    }
-}
 
 .Contenedor3 {
     position: relative;
@@ -652,7 +568,7 @@ h1 {
 }
 
 .cartaprincipal .producto {
-    background-image: linear-gradient(to right, rgba(150, 148, 148, 0.74),#ff4800);
+    background-image: linear-gradient(to right, rgba(147, 128, 94, 0.74), #956d5e);
     margin: 10px 30px;
 }
 
@@ -672,7 +588,7 @@ h1 {
 .bloque_producto h2 {
     margin-top: 8px;
     padding-left: 0;
-    color: $colorPrincipal;
+    color: black;
     text-align: center;
 
 }
@@ -692,10 +608,8 @@ h1 {
         height: 100%;
         width: 100%;
     }
-    .card .card-body{
-        font-size: $tamañoChico;
-    }
 }
+
 
 /* /////////////////////SERVICIOS//////////////////////// */
 
@@ -732,4 +646,56 @@ h1 {
     align-items: center;
     justify-content: flex-start;
 
+}
+.container .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out
+}
+
+.container .card:hover {
+    height: 450px;
+}
+
+.container .card .imgContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+    .container .card .imgContainer {
+        left: -2px;
+    }
 }
