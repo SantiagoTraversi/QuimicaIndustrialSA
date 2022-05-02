@@ -10,4 +10,61 @@ $tamañoChico: 17px;
 $tituloGrande: 30px;
 $tituloMediano: 24px;
 $tituloChico: 22px;
-$vista:mobile;
+$tema: original;
+
+body{
+    @if $tema == añonuevo{
+        background-color: blue;
+    } @else if $tema == navidad{
+        background-color: red;
+    } @else {
+        background-color: #F2C335;
+    }
+}
+
+@mixin container($ancho, $alto, $color) {
+    width: $ancho;
+    height: $alto;
+    background-color: $color;
+    border-radius: 5%;
+    margin: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 25px;
+    margin-top: 40px;
+    margin-right: 50px;
+
+  } 
+  
+  .card{
+    @include container(100%, 1000px, #33D374)
+
+  }
+  .contenedor-card{
+    @include container(80%, 500px, #108EFF)
+  }
+  .bloque-img{
+    @include container(90%, 300px, #108EFF)
+  }
+  %btn {
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 2px auto;
+    border-radius: 2px;
+    color: #FFFFFF;
+  }
+  
+  .btn_success {
+    @extend %btn;
+    background-color: #108EFF;
+  }
+  .btn_alert {
+    @extend %btn;
+    background-color: #FF8516;
+  }
+  .btn_cancel {
+    @extend %btn;
+    background-color: #D61E20;
+  }
