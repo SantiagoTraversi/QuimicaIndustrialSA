@@ -1,9 +1,65 @@
+body {
+  background-color: #F2C335; }
+
+.card {
+  width: 100%;
+  height: 1000px;
+  background-color: #33D374;
+  border-radius: 5%;
+  margin: 10px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 25px;
+  margin-top: 40px;
+  margin-right: 50px; }
+
+.contenedor-card {
+  width: 80%;
+  height: 500px;
+  background-color: #108EFF;
+  border-radius: 5%;
+  margin: 10px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 25px;
+  margin-top: 40px;
+  margin-right: 50px; }
+
+.bloque-img {
+  width: 90%;
+  height: 300px;
+  background-color: #108EFF;
+  border-radius: 5%;
+  margin: 10px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 25px;
+  margin-top: 40px;
+  margin-right: 50px; }
+
+.btn_success, .btn_alert, .btn_cancel {
+  width: 100px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 2px auto;
+  border-radius: 2px;
+  color: #FFFFFF; }
+
+.btn_success {
+  background-color: #108EFF; }
+
+.btn_alert {
+  background-color: #FF8516; }
+
+.btn_cancel {
+  background-color: #D61E20; }
+
 * {
   margin: 0;
   padding: 0; }
-
-.cuerpo {
-  background-color: #F2E63D; }
 
 .contenido {
   max-width: 100%;
