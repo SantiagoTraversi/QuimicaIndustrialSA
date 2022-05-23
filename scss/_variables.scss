@@ -38,11 +38,11 @@ body{
   } 
   
   .card{
-    @include container(100%, 1000px, #33D374)
+    @include container(100%, 1000px, white)
 
   }
   .contenedor-card{
-    @include container(80%, 500px, #108EFF)
+    @include container(80%, 500px, #000000)
   }
   .bloque-img{
     @include container(90%, 300px, #108EFF)
